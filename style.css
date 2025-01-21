@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+header {
+    background-color: #162447;
+    color: #e43f5a;
+    text-align: center;
+    padding: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1f4068;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+nav a {
+    color: #e43f5a;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s;
+}
+nav a:hover {
+    background-color: #e43f5a;
+    color: #1f4068;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #162447;
+    color: #e43f5a;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    margin: 20px 0; /* Add margin for spacing above and below the image */
+}
+.container {
+    max-width: 960px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding around the container */
+}
+
+/* Button styling */
+button {
+    background-color: #e43f5a; /* Change to a bright color to stand out */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding for size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and scaling */
+    margin-top: 20px; /* Add some spacing above the button */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #d03549; /* Slightly darker shade when hovered */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Focus effect for accessibility */
+button:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 10px rgba(72, 211, 98, 0.8); /* Green glow when focused */
+}
+.video-container {
+    max-width: 80%; /* Limit the width to 80% of the parent */
+    margin: 20px auto; /* Center the video */
+    border: 5px solid #e43f5a; /* Add a border around the video */
+    border-radius: 10px; /* Round the corners of the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow effect around the video */
+}
+
+/* Make the iframe responsive */
+.video-container iframe {
+    width: 100%; /* Make the video responsive to the container's width */
+    height: 315px; /* Maintain the aspect ratio */
+}
